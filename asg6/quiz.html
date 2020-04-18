@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>  Assignment 6 Site </title>
+    <link rel="stylesheet" type="text/css" href="asg6.css">
+      <!-- Prevent smartphones from scaling pages down -->
+      <meta name="viewport" content="initial-scale=1">
+
+  </head>
+  <body>
+      
+      <header>
+          <h1 id="head">Assignment 6</h1>
+      
+          <h4 id="subhead">Click below on the navigation bar to see all the parts of this assignment! Thanks!</h4>
+      </header>
+          
+      <nav>
+          <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="madlibs.html">Madlibs</a></li>
+              <li><a href="add.html">Calculator</a></li>
+              <li><a ref="quiz.html">Quiz</a></li>
+              <li><a href="store.html">Store</a></li>
+          </ul>
+      </nav>
+      
+      <article>
+          
+          <h1> KENDRICK LAMAR QUIZ</h1>
+          <form action="PHP/quiz.php" method="post">
+              First Name: <input type="text" name="fname" required><br>
+              Last Name: <input type="text" name="lname" required><br>
+              <p>What is Kendrick Lamar's real last name?</p>
+              <input type="radio" name="q1" value="lamar"required> Lamar<br>
+              <input type="radio" name="q1" value="beckham"> Beckham<br>
+              <input type="radio" name="q1" value="duckworth"> Duckworth<br>
+              <p>Which of these works was released first?</p>
+              <input type="radio" name="q2" value="80"required> Section 80 <br>
+              <input type="radio" name="q2" value="maad"> Good Kid, Maad City <br>
+              <input type="radio" name="q2" value="damn"> Damn <br>
+              <p>Kendrick Lamar has never been on a song with J Cole</p>
+              <input type="radio" name="q3" value="True"required> True <br>
+              <input type="radio" name="q3" value="False"> False <br><br>
+              <input type="submit" value="Submit"><input type="reset" value="Reset">
+          </form>
+          
+      
+      </article>
+      
+
+      <footer class = "footer">
+          <p> © 2019 Karan Gaikwad</p>
+      </footer>
+      
+
+      
+  </body>
+</html>

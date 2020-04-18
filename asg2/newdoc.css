@@ -1,0 +1,18 @@
+h1, h3 {
+    text-align: center;
+    background-color: mediumpurple;
+    border: 2px solid;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    background-color: mediumpurple;
+    border: 1px solid;
+}
+
+div {
+    font-family: "Times New Roman", Times, serif;
+    background-color: deeppink;
+}

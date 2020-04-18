@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>  Assignment 6 Site </title>
+    <link rel="stylesheet" type="text/css" href="asg6.css">
+      <!-- Prevent smartphones from scaling pages down -->
+      <meta name="viewport" content="initial-scale=1">
+
+  </head>
+  <body>
+      
+      <header>
+          <h1 id="head">Assignment 6</h1>
+      
+          <h4 id="subhead">Click below on the navigation bar to see all the parts of this assignment! Thanks!</h4>
+      </header>
+          
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="madlibs.html">Madlibs</a></li>
+              <li><a href="add.html">Calculator</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a class="active" href="store.html">Store</a></li>
+          </ul>
+      </nav>
+      
+      <article>
+          
+          <form action="PHP/store.php" method="post">
+              Name: <input type="text" name="name" required><br>
+              E-mail: <input type="email" name="email" required><br>
+              Product: <select name="food" value=""required>
+              <option value="cheese">Cheese | $5</option>
+              <option value="bread">Bread | $2</option>
+              </select>
+              <br>
+              Quantity: <input type="number" name="quantity" min ="1"required><br>
+              <input type="submit"><input type="reset">
+          </form>
+          
+      </article>
+      
+
+      <footer class = "footer">
+          <p> © 2019 Karan Gaikwad</p>
+      </footer>
+      
+      
+      
+      
+      <script src="jquery-3.4.1.min.js"> </script>
+      <script src="jquery-validation-1/dist/jquery.validate.min.js"> </script>
+      <script src="asg6.js"> </script>
+      
+  </body>
+</html>

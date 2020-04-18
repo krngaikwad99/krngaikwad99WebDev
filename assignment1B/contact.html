@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Contact </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+      <!-- Prevent smartphones from scaling pages down -->
+      <meta name="viewport" content="initial-scale=1">
+
+  </head>
+  <body>
+      
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="python.html">Python</a></li>
+              <li><a href="c.html">C</a></li>
+              <li><a href="java.html">Java</a></li>
+              <li><a class="active" href="contact.html">Contact Me</a></li>      
+          </ul>
+      </nav>
+      
+      <header>
+          <h1 id="head"> Contact Form </h1>
+          <p> Feel free to reach out to me for anything! </p>
+      </header>
+      
+      
+      <section>
+      
+          <form action="mailto:kg2251@nyu.edu">
+  
+              <fieldset>
+                  <legend> Personal Info: </legend>
+                  <label for="full name">Full Name </label>  
+                  <input type=text value="Example Name" name="fullname" id="fullname"> <br>
+                  <label for="email"> Email </label>   
+                  <input type=email  name="email" id="email">
+              
+                  <p>
+                      <label for="comments"> Enter Comments  </label>
+                      <textarea cols=50 rows=5 id="comments" auto >Example Text </textarea>
+                  </p>
+        
+              </fieldset>
+  
+          
+              <fieldset> <legend> Credit card info </legend>
+  
+                  <p>
+                
+                      <label for="CC"> Credit Card Type: </label>
+                      <br>
+                      Visa <input type=radio name=cc value=visa> 
+                      Master <input type=radio name=cc value=Master>
+                      AMEX <input type=radio name=cc value=AMEX> 
+                  
+                  </p>
+                  
+                  <label for="ccnumber"> Credit card number: </label> 
+                  
+                  <input type=number name=ccn min="1" max="9999999999" id="ccnumber" required>
+              
+                  <p>
+                      <label for="expiredate"> Expiration Date: </label> 
+                      <input type=date name=expdate >
+                  </p>
+              
+              </fieldset>
+              
+              <fieldset>
+              
+                  <legend> Login info </legend>
+                  username: <input type=text name=username id="login"> <br>
+                  password: <input type=password name=password id="login"> <p>
+              
+              </fieldset>
+  
+              <fieldset> <legend> Other Miscellaneous input fields:  </legend>
+                  
+                  Search: <input type=search name=search>
+                  
+                  <p>
+                      Choose your top favorite rappers (checkbox):<br>
+                      
+                      Kendrick Lamar<input type=checkbox name=rap value=Kendrick>
+                      Eminem<input type=checkbox name=rap value=Eminem>
+                      Kanye West<input type=checkbox name=rap value=Kanye>
+                      Tupac<input type=checkbox name=rap value=Tupac>
+                      Nicki Minaj<input type=checkbox name=rap value=Nicki>
+                      
+                  </p>
+                  
+                  
+                  <p>
+                      
+                      Pick a color: <input type=color name=color >               
+       
+                  </p>
+                  
+                  <p>
+  
+                      Select a state (selection menu): 
+                      
+                      <select name=state >
+                          <option value="NY">NY </option>
+                          <option value="NJ">NJ </option>
+                          <option value="CA" selected >NJ </option>
+                      </select>
+                      
+                  </p>
+              </fieldset>
+              
+              <input type=submit >
+          
+          </form>
+      
+          
+      </section>
+      
+      <footer class = "footer">
+          <p> © 2019 Karan Gaikwad </p>
+      </footer>
+    
+  </body>
+</html>

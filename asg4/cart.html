@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>  Assignment 3 Site </title>
+    <link rel="stylesheet" type="text/css" href="asg4.css">
+      <!-- Prevent smartphones from scaling pages down -->
+      <meta name="viewport" content="initial-scale=1">
+
+  </head>
+  <body>
+      
+      <header>
+          <h1 id="head">Assignment 4</h1>
+      
+          <h4 id="subhead">Click below on the navigation bar to see all the parts of this assignment! Thanks!</h4>
+      </header>
+          
+      <nav>
+          <ul>
+              <li><a href="index.html">Available Products</a></li>
+              <li><a class="active" href="cart.html">Shopping Cart</a></li>
+              <li><a href="parttwo.html">Part II</a></li>
+          </ul>
+      </nav>
+      
+      <article>
+
+          <img src= "lamp.jpg" alt= "Fancy Lamp" height="200px">
+          <img src= "mirror.jpg" alt= "Fancy Mirror" height="200px">
+          
+          
+          <form id = "fullform" name="Form">
+          
+              <fieldset>
+                  <legend><strong>Quantity</strong></legend>
+                  <p><input id="l" style="width:40px" type="number" value="0" name="lamp" min="0" required> <label> Lamp: $300 </label></p>
+                  <p><input id="m" style="width:40px" type="number" value="0" name="mirror" min="0" required> <label> Mirror: $500 </label></p>
+              </fieldset>
+              <br>
+              
+              <fieldset>
+                  <legend><strong>Customer Information</strong></legend>
+                  <p><label>First Name:</label><input id="fname" value="" type="text" name="fname" placeholder="First" required></p>
+                  <p><label>Last Name:</label><input id="lname" value="" type="text" name="lname" placeholder="Last" required></p>
+                  <p><label>Email:</label><input id="email" value="" type="email" name="email" title="Email must contain a '@' & '.'" placeholder="firstlast@gmail.com" required></p>
+                  <p><label>Phone:</label><input id="phone" value="" type="tel" name="phone" size="11" maxlength="10" title="Phone number must contain 10 numerical digits" placeholder="1231231234" required></p>
+              </fieldset>
+              <br>
+              
+              <fieldset>
+                  <legend><strong>Billing Information</strong></legend>
+                  <p><label>Address:</label><input id="address" value="" type="text" name="address" placeholder="101 Prince Street" required></p>
+                  <p><label>City:</label><input id="city" value="" type="text" name="city" placeholder="Lavendar City" required></p>
+                  <p><label>State:</label><select id="state" name="state" form="order" required>
+                      <option value="" selected disabled hidden>~~~~~~~~~~~~~~</option>
+                      <option value="NY">New York</option>
+                      <option value="NJ">New Jersey</option>
+                  </select></p>
+                  <p><label>Zip:</label><input id="zip" value="" type="text" name="zip" size="6" maxlength="5" placeholder="11111" title="Zip must contain 5 numerical digits" required></p>
+                  <p><label>Shipping:</label></p>
+                  <p><label>Standard</label><input type="radio" id="shipping" name="shipping" value="0" checked> Free (5-10 business days)</p>
+                  <p><label>2-Day Shipping</label><input type="radio" id="shipping" name="shipping" value="15">$15 (Guaranteed 2-3 business days)</p>
+                  <p><label>1-Day Shipping</label><input type="radio" id="shipping" name="shipping" value="35">$35 (Get it by tomorrow guaranteed!)</p>
+              </fieldset>
+              <br>
+              <fieldset>
+                  <legend><strong>Payment Information</strong></legend>
+                  <p><label>Name on card:</label><input id="cardname" type="text" name="cardname" value="" placeholder="First Last" required></p>
+                  <p><label>Card Number:</label><input id="cardnumber" type="text" name="cardnumber" size="18" maxlength="16" value="" title="Card number must contain 16 numberical digits" placeholder="1111222233334444" required></p>
+                  <p><label>Expiration Date:</label>
+                      <input id="expmonth" type="text" name="expmonth" size="3" maxlength="2" placeholder="01" value="" title="2 Numerical Digits" required>
+                      <input id="expyear" type="text" name="year" size="3" maxlength="2" placeholder="01" value="" title="2 Numerical Digits" required>
+                  </p>
+                  <p><label for="cvv">CVV:</label><input id="cvv" type="text" name="cvv" size="4" maxlength="3" value="" placeholder="111" title="3 Numerical Digits" required></p>
+              </fieldset>
+              <br>
+              <button id="submit" type="submit">Place Your Order</button><button id="clear" type="reset">Clear Shopping Cart</button>
+          </form>
+          
+          <p id="output"></p>
+          
+          <br>
+          <br>
+          
+          <div id="p1">
+              <h2>Order Summary:</h2>
+              <p id="lampcost">Lamps: $0</p>
+              <p id="mirrorcost">Mirrors: $0</p>
+              <p id="tax">Tax: $0</p>
+              <p id="shippingcost">Shipping: $0</p>
+              <h4 id="totalcost">Grand Total: $0</h4>
+          </div>
+          
+          
+      </article>
+      
+
+      <footer class = "footer">
+          <p> © 2019 Karan Gaikwad</p>
+      </footer>
+      
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="asg4cart.js"> </script>
+      
+  </body>
+</html>

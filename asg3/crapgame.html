@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>  Assignment 3 Site </title>
+    <link rel="stylesheet" type="text/css" href="asg3.css">
+      <!-- Prevent smartphones from scaling pages down -->
+      <meta name="viewport" content="initial-scale=1">
+
+  </head>
+  <body>
+      
+      <header>
+          <h1 id="head">Assignment 3</h1>
+      
+          <h4 id="subhead">Click below on the navigation bar to see all the parts of this assignment! Thanks!</h4>
+      </header>
+          
+      <nav>
+          <ul>
+              <li><a href="index.html">Random Image Application</a></li>
+              <li><a href="slideshow.html">Slide Show Application</a></li>
+              <li><a class="active" href="crapgame.html">Simple Crap Game</a></li>
+              <li><a href="calendar.html">NYU Holiday Calendar</a></li>
+          </ul>
+      </nav>
+
+      <section>
+          
+          
+          <h1 id="stylechanger">Time to play a dice game!</h1>
+          
+          <h3> RULES: Choose an amount to bet. Roll the dice. If you roll a 7 or 11, you win! If you roll a 2, 3, or 12, you lose! </h3>
+          
+          <p>Enter betting amount (please use arrows and enter multiple of 5 between $5 and $100): <input type=number id="betamount" min="5" max="100" step="5"></p>
+          
+          <button id="roll" onclick="rolldice()"> Click to Roll when Ready! </button>
+          
+          <div style="visibility:hidden" id="diceimages">
+              <img id="dice1image" src="die1.png" height = "300px" width = "300px">
+              <img id="dice2image" src="die1.png" height = "300px" width = "300px">
+          </div>
+          
+          <p id="diesum"> </p>
+          
+          <p id="result"> </p>
+          
+          
+          <p>
+            
+              <a href="../index.html"> Click here to go back to my original assignment site! </a>
+          
+          </p>
+          
+      </section>
+      
+
+      <footer class = "footer">
+          <p> © 2019 Karan Gaikwad</p>
+      </footer>
+      
+      
+      <script src="asg3.js"></script>
+      
+  </body>
+</html>
